@@ -7,11 +7,11 @@ RUN apt-get update \
 
 FROM ubuntu:focal-20200423
 
-LABEL maintainer="sameer@damagehead.com"
+LABEL maintainer="devops@innfactory.de"
 
 ENV BIND_USER=bind \
-    BIND_VERSION=9.16.1 \
-    WEBMIN_VERSION=1.941 \
+    BIND_VERSION=9.18.9 \
+    WEBMIN_VERSION=2.010 \
     DATA_DIR=/data
 
 COPY --from=add-apt-repositories /etc/apt/trusted.gpg /etc/apt/trusted.gpg
