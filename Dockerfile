@@ -5,7 +5,7 @@ RUN apt-get update \
  && apt-key adv --fetch-keys http://www.webmin.com/jcameron-key.asc \
  && echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
 
-FROM ubuntu:focal-20200423
+FROM ubuntu:focal-20221130
 
 LABEL maintainer="devops@innfactory.de"
 
